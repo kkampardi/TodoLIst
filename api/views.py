@@ -6,7 +6,7 @@ from .models import TodoList
 
 # Create your views here.
 class CreateView(generics.ListCreateAPIView):
-    qyery = TodoList.objects.all()
+    queryset = TodoList.objects.all()
     serializer_class = TodoListSerializer
 
     def create_performance(self,serializer):
